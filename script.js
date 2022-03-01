@@ -22,14 +22,8 @@ const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
 
 // Function to compare the result and update the score:
 const updateScore = (winner) => {
-  if (winner === 'human') {
-    humanScore ++;
-  } else if (winner === 'computer') {
-    computerScore ++;
-  }
+  winner == 'human' ? humanScore++ : computerScore++;
 }
 
 // Function to advance the round:
-const advanceRound = () => {
-  currentRoundNumber ++;
-}
+const advanceRound = () => currentRoundNumber++;
