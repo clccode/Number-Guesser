@@ -13,11 +13,7 @@ const generateTarget = () => {
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
   const humanDifference = Math.abs(humanGuess - targetGuess);
   const computerDifference = Math.abs(computerGuess - targetGuess);
-  if (humanDifference <= computerDifference) {
-    return true;
-  } else if (computerDifference < humanDifference) {
-    return false;
-  }
+  return humanDifference <= computerDifference;
 }
 
 // Function to compare the result and update the score:
